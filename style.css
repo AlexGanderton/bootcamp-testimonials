@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 32px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(images/pattern-curve.svg) no-repeat, url(images/pattern-bg.svg) no-repeat;
+  background-size: 50% 20%, 45rem;
+  background-position: bottom left, 84% center;
+}
+
+.container {
+  width: 1200px;
+  position: relative;
+  margin: 2rem;
+}
+
+.container > .text {
+  position: absolute;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: #202046;
+  font-size: 2.2rem;
+  font-weight: 300;
+  z-index: 1;
+  background: url(images/pattern-quotes.svg) no-repeat;
+  background-position-x: 18%;
+  background-position-y: 23%;
+}
+
+.container > .text > .bottom {
+  position: relative;
+}
+
+.container > .text > .bottom > .position {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.container > .text > .bottom > .position > .name {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.container > .text > .bottom > .position > .job {
+  color: #babacf;
+}
+
+.container > .profile {
+  height: 540px;
+  width: 50%;
+  max-width: 540px;
+  float: right;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container > .profile > .image {
+  background-image: url(images/image-tanya.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+  z-index: -1;
+}
+
+.container > .profile > .controls {
+  position: absolute;
+  background: white;
+  color: #babacf;
+  border-radius: 50px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -32px;
+  left: 10%;
+  z-index: 1;
+  -webkit-box-shadow: 0 10px 50px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container > .profile > .controls > .left {
+  padding: 1rem;
+}
+
+.container > .profile > .controls > .left:hover {
+  background: #babacf;
+  color: white;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.container > .profile > .controls > .right {
+  padding: 1rem;
+}
+
+.container > .profile > .controls > .right:hover {
+  background: #babacf;
+  color: white;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-size: 80% 20%, 60% 50%;
+    background-position: bottom left, 50% 5%;
+  }
+  .container {
+    width: 100%;
+    height: 90%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  .container > .text {
+    font-size: 1.5rem;
+    width: 100%;
+    height: auto;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+    background-position-x: 50%;
+    background-position-y: 0%;
+  }
+  .container > .text > .bottom > .position {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .container > .profile {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    width: 350px;
+    height: 100%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .container > .profile > .image {
+    width: 100%;
+    height: 100%;
+  }
+  .container > .profile > .controls {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-size: 80% 20%, 75% 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
